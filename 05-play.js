@@ -1,3 +1,5 @@
+// 11.08.25
+// ati this is wrong
 const person = {
     name: 'Max',
     age: 29,
@@ -14,6 +16,7 @@ const personTwo = {
     }
 };
 
+// preferred
 const personThree = {
     name: 'Immanuel',
     age: 29,

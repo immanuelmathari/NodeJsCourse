@@ -1,0 +1,8 @@
+I want you to create a brand new nodejs file
+1. that spins up a Node.js-driven server on port 3000
+2. Handle two routes "/" and "/users"
+   returns some greeting text on "/"
+   returns a list of dummy users eg <ul><li>users</li></ul>
+3. in the "/" after the greeting, add a form with a "username" name <input> to the "/" page and submit a POST request to "/create-user" upon a button click
+4. Add the "/create-user" route and parse the incoming data (ie the username) and simply log it to the console
+5. 

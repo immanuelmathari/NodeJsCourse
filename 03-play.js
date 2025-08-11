@@ -1,8 +1,8 @@
 const name = 'Immah';
-let age = 24;
+let age = 23;
 const hasHobbies = true;
 
-age = 25;
+age = 24;
 
 // anonymous function stored in a constant variable 
 const summerizeUser = function (userName, userAge, userHasHobby) {

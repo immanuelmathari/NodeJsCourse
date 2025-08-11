@@ -1,3 +1,4 @@
+// here we create a response
 const http = require('http');
 
 const server = http.createServer((req, res) => {

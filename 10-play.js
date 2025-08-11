@@ -26,7 +26,7 @@ console.log('Mathari');
 // the callback is the function we call once done with the timer
 const fetchData = callback => {
     setTimeout(() => {
-        callback('Done');
+        callback('Done1');
     }, 1500)
 }
 
@@ -34,7 +34,7 @@ const fetchData2 = () => {
     // after fetching the function in the setTimeout, we want to use a promise
     const promise = new Promise((resolve, reject) => {
         setTimeout(() => {
-        resolve('Done');
+        resolve('Done2');
     }, 1500);
     });
     return promise;
