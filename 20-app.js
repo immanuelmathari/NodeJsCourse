@@ -1,3 +1,4 @@
+// 14.08.25
 const http = require('http');
 const express = require('express');
 
@@ -10,9 +11,12 @@ app.use((req, res, next) => {
 
 app.use((req, res, next) => {
     console.log('In another middlware');
-    
+    res.send('<h1>Hello from Express</h1>');
 })
 
-const server = http.createServer(app);
+// const server = http.createServer(app);
 
-server.listen(3000);
+// server.listen(3000);
+
+// welcome to express my friend
+app.listen(3000);
