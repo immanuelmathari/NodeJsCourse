@@ -1,0 +1,26 @@
+{
+  "name": "node-first-app-manuel",
+  "version": "1.0.0",
+  "description": "a sample node app with npm init",
+  "homepage": "https://github.com/immanuelmathari/NodeJsCourse#readme",
+  "bugs": {
+    "url": "https://github.com/immanuelmathari/NodeJsCourse/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/immanuelmathari/NodeJsCourse.git"
+  },
+  "license": "ISC",
+  "author": "Immanuel Mathari",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
