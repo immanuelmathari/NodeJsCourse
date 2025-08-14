@@ -1,0 +1,76 @@
+1. create an npm project and install express js and nodemon if you want 
+2. create an express js app which funnels requests through 2 middleware functions that log something to the console and return one response
+commment them
+3. Handle request "/" and "/users" such that neither of the two middlewares you use handles the other requests. eg send dummy data
+
+
+
+
+
+
+
+
+
+
+solution
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+> npm init
+> npm install --save express
+> npm install --save-dev nodemon
+
+- add in package.json a script for "start": nodemon app.js
+- create app.js
+const express = require('express');
+const app = express();
+app.use((req,res,next) {
+    console.log("first middleare");
+    next();
+});
+app.use((req,res,next) {
+    console.log("second middleare");
+    res.send('<p>Assignment solved</p>');
+});
+// task three. comment above
+app.use('/', (req,res,next) => {
+    console.log('middleware');
+    res.send('<p>The middleware that handles just /</p>')
+})
+
+// this should be the first else we will never be reached. i dont understand. ati we have to have the most specific middleware first. ati this is not an exact filter. the path just has to begin with this. .ooh i get it. with it as it is, this route will never be reached coz / will match with /users.. thats what hes trying to say
+app.use('/users', (req,res,next) => {
+    console.log('/users middleware');
+    res.send('<p>The middleware that handles just users /</p>')
+})
+app.listen(3000);
