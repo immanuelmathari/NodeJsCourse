@@ -1,10 +1,12 @@
-const hobbies = ['Sports', 'Cooking'];
+// reviewed 21.08.25
+
+const hobbies = ['Boxing', 'Cooking'];
 
 const copiedArray = hobbies.slice();
 
 // option two
 const copiedArray2 = [hobbies]; // it becomes an array with another array. its a new element where the first array is the old array
-const copiedArray3 = [...hobbies]; // this pulls out all elements of an array and puts it around whatever is around that spread operator. so it will pull each element out and put it in the new [] array
+const copiedArray3 = [...hobbies]; // this pulls out all elements of an array and puts it around whatever is around that spread operator. so it will pull each element out and put it in the new [] array. this is a spread operator
 
 // 08.08.25
 // This will work for both arrays and objects
@@ -16,7 +18,7 @@ const person = {
     }
 };
 
-const copiedPerson = {...person};
+const copiedPerson = {...person}; // you can also spread an object. you pull elements out of the object and put it in that spread operator
 console.log(copiedPerson);
 
 console.log(copiedArray);

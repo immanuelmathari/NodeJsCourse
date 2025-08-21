@@ -1,3 +1,5 @@
+// reviewed 21.08.25
+
 // what is asynchronous code - does not happen  immediately.
 setTimeout(() => {
     console.log('Timer is done!');

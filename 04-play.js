@@ -1,9 +1,12 @@
+// reviewed 21.08.25
+
 const name = 'Immah';
 let age = 24;
 const hasHobbies = true;
 
 age = 25;
 
+// this simply shows how you can have another function inside this variable
 const summerizeUser = (userName, userAge, userHasHobby) => {
     return 'Name is ' + userName + ', age is ' + userAge + ' and the user has hobbies: ' + userHasHobby;
 }
@@ -15,6 +18,7 @@ const add = (a,b) => {
 
 console.log(add(1,2));
 
+// you can have it in one line
 const addAnother = (a,b) => a + b;
 
 // when you only have one argument

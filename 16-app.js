@@ -1,3 +1,5 @@
+// reviewed 21.08.25
+
 const http = require('http');
 const fs = require('fs');
 
@@ -17,7 +19,8 @@ const server = http.createServer((req, res) => {
             console.log(chunk);
             body.push(chunk);
         }); 
-        // you were wrong here
+        // you were wrong here. 
+        // review says; you were actually not wrong. coz in the previous file, we req.on('end', () => ) then later on we return res.end(). here there is no return res.end() so you return it early
         // req.on('end', () => {
         return req.on('end', () => {
             const parsedBody = Buffer.concat(body).toString(); 
@@ -25,7 +28,9 @@ const server = http.createServer((req, res) => {
             fs.writeFileSync('message.txt', message);
             res.statusCode = 302;
             res.setHeader('Location', '/');
-            return res.end();
+            // return res.end();
+            // i dont know if the below is wrong
+            res.end();
         });
     }
         res.setHeader('Content-Type', 'text/html');

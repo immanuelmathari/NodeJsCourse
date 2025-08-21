@@ -1,3 +1,5 @@
+// reviewed 21.08.25
+
 // 14.08.25
 const http = require('http');
 const express = require('express');
@@ -15,7 +17,7 @@ app.use('/add-product' ,(req, res, next) => {
 })
 
 app.use('/' ,(req, res, next) => {
-    console.log('In another middlware');
+    console.log('In another middlware one');
     res.send('<h1>Hello from Express</h1>');
 })
 

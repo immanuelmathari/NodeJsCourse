@@ -1,3 +1,5 @@
+// reviewed 21.08.25
+
 // 08.08.25
 
 const person = {
@@ -30,7 +32,8 @@ const { name, age } = person; // will store the value of the object property of 
 console.log(name,age);
 
 // to destructure arrays
-const hobbies = ['Sports', 'Cooking'];
+const hobbies = ['Boxing', 'Cooking'];
 const [hobby1, hobby2] = hobbies;
 console.log(hobby1, hobby2);
+console.log("Hi this is my first hobby " +hobby1 + " and this is my second hobby " + hobby2);
 // NB: when you destructure objects you use {} when destructuring arrays you use []. and once destructured, they wount be arrays

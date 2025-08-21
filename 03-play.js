@@ -1,3 +1,5 @@
+// reviewed 21.08.25
+
 const name = 'Immah';
 let age = 23;
 const hasHobbies = true;

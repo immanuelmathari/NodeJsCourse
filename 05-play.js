@@ -1,3 +1,5 @@
+// reviewed 21.08.25
+
 // 11.08.25
 // ati this is wrong
 const person = {

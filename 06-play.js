@@ -1,4 +1,6 @@
-const hobbies = ['Sports', 'Cooking'];
+// reviewed 21.08.25
+
+const hobbies = ['Boxing', 'Cooking'];
 
 for (let hobby of hobbies) {
     console.log(hobby);

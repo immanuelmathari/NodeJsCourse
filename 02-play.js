@@ -1,8 +1,10 @@
+// reviewed 21.08.25
+
 const name = 'Max'; // string
 var age = 29; // number
 const hasHobbies = true; // boolean
 
-age = 30
+age = 30;
 
 function summerizeUser(userName, userAge, userHasHobby){
     return 'Name is ' + userName + ', age is ' + userAge + ' and the user has hobbies: ' + userHasHobby;
