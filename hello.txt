@@ -1,2 +1,0 @@
-Hello from Node Js. Today is 5th August 2025
-this is 25.15
