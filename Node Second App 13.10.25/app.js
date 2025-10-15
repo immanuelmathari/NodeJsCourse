@@ -5,6 +5,11 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+// NOTE #03
+// tells express to use this engine whenever you try to render a template
+app.set('view engine', 'pug');
+app.set('views', 'views');
+
 // 13.10.25
 const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
